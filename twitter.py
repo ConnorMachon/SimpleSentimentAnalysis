@@ -17,10 +17,11 @@ import tweepy
 from textblob import TextBlob
 
 # Variables for twitter authentication
-consumer_key = 'XbRv8NaGUNLFMdLrYQihIPO0V'
-consumer_secret = 'cTFYjEChVaMNo8uMfq7pZx6O8JQujdTDJrDrPq0xScsKlwnN83'
-access_token = '873924627797393408-iH1UaVZMtBcHjTgQUmcIpfUwehsFs87'
-access_token_secret = 'i0gooS78RQzOtkdojcuJf8p4oYvA0z69XoZKdmOpdI8QC'
+# INPUT YOURS HERE
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 # The act of authenticating (logging in) to twitter via tweepy
 login = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -30,7 +31,8 @@ login.set_access_token(access_token, access_token_secret)
 api = tweepy.API(login)
 
 # Define what we are looking for
-search = api.search('Trump')
+# INPUT SEARCH HERE
+search = api.search('')
 
 # Define what to do with tweets that contain the search
 for tweet in search:
